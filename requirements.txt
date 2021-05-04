@@ -1,6 +1,8 @@
 asgiref==3.3.4
+dj-database-url==0.5.0
 Django==3.2
 django-cors-headers==3.7.0
+django-heroku==0.3.1
 django-rest-framework==0.1.0
 django-summernote==0.8.11.6
 djangorestframework==3.12.4
@@ -9,3 +11,4 @@ Pillow==8.2.0
 psycopg2==2.8.6
 pytz==2021.1
 sqlparse==0.4.1
+whitenoise==5.2.0
