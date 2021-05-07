@@ -9,7 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-v%x1r9=66-)gr(gad!wmg(cbu92_^wyylhut*u%36clme8j0#4'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['https://api-sachinsblog.herokuapp.com', 'api-sachinsblog.herokuapp.comon ']
 
@@ -138,9 +138,9 @@ REST_FRAMEWORK = {
 
 
 CORS_ALLOWED_ORIGINS = [
-    "https://sachinsblog.in",
+    "https://www.sachinsblog.in",
     "http://localhost:3000",
-    "https://sachinshrmaa.github.io",
+    "https://sachins-blog.vercel.app",
 ]
 
 
