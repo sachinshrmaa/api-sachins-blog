@@ -1,6 +1,5 @@
 import os
 from pathlib import Path
-import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -11,7 +10,7 @@ SECRET_KEY = 'django-insecure-v%x1r9=66-)gr(gad!wmg(cbu92_^wyylhut*u%36clme8j0#4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://api-sachinsblog.herokuapp.com', 'api-sachinsblog.herokuapp.comon ']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -165,6 +164,3 @@ ATTRIBUTES = {
     'a': ['href', ],
 }
 
-
-# Heroku
-django_heroku.settings(locals())
