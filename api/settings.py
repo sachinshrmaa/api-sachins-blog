@@ -12,7 +12,8 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['65.0.180.250']
+
+ALLOWED_HOSTS = ['api-sachinsblog.herokuapp.com']
 
 
 # Application definition
@@ -111,19 +112,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 
-STATIC_URL = '/static/'
-
-STATICFILES_DIRS = ( 
-    '/home/ubuntu/api/assets',
-)
-
-STATIC_ROOT = '/home/ubuntu/api/static/'
-
+STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 #Media SetUp
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = '/home/ubuntu/api/media'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 # Default primary key field type
